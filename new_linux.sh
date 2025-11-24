@@ -1,4 +1,13 @@
-# echo "Installing bat using apt"
+# list of things to install from snap
+# notion-desktop
+# slack
+# tmux
+# zotero-snap
+# vlc ?
+echo "Installing from snap:"
+sudo snap install tmux --classic
+sudo snap install nushell --classic
+echo "Installing bat using apt"
 sudo apt install bat
 # might be installed as batcat
 # create link
