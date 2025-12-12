@@ -143,7 +143,7 @@ fi
 echo "===== Installing Ghostty ====="
 if ! command -v ghostty >/dev/null 2>&1; then
     echo "Program not found. Installing..."
-    sudo apt install -y ghostty
+    sudo snap install ghostty --classic
 else
     echo "Program already installed. Skipping."
 fi
