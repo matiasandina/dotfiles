@@ -135,7 +135,7 @@ fi
 echo "===== Installing Starship ====="
 if ! command -v starship >/dev/null 2>&1; then
     echo "Program not found. Installing..."
-    curl -fsSL https://starship.rs/install.sh | bash -s -- --yes
+    curl -sS https://starship.rs/install.sh | sh
 else
     echo "Program already installed. Skipping."
 fi
