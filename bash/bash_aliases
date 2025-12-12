@@ -1,0 +1,44 @@
+#=====================================
+# Basic navigation aliases
+#=====================================
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias c='clear'
+
+# Colorized grep by default
+alias grep='grep --color=auto'
+
+#=====================================
+# Git helpers
+#=====================================
+
+alias glog='git log --graph --oneline --decorate --all'
+alias gco='git checkout'
+alias gca='git commit -a -m'
+alias gc='git commit -m'
+alias gadd='git add'
+
+#=====================================
+# Directory shortcuts (safe placeholders)
+#=====================================
+
+alias cddrop="cd $HOME/MIT\ Dropbox/Matias\ Andina/Matias_Choi_Lab/"
+alias cdmandina="cd /mnt/solexa_hrvatin/mandina"
+alias proj="cd $HOME/Projects"
+
+#=====================================
+# SSH shortcuts 
+#=====================================
+
+# machine-specific file that is NOT tracked by git!!
+
+if [ -f "$HOME/.bash_aliases_local" ]; then
+    source "$HOME/.bash_aliases_local"
+fi
