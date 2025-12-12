@@ -42,3 +42,8 @@ alias proj="cd $HOME/Projects"
 if [ -f "$HOME/.bash_aliases_local" ]; then
     source "$HOME/.bash_aliases_local"
 fi
+
+#=====================================
+# FZF integration (if installed)
+#=====================================
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
