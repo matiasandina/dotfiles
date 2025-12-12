@@ -73,7 +73,7 @@ sudo apt install -y r-base r-base-dev libcurl4-openssl-dev libxml2-dev libssl-de
 echo "===== Installing R packages from list ====="
 
 Rscript - <<'EOF'
-pkg_file <- file.path(Sys.getenv("HOME"), "dotfiles", "r_packages.txt")
+pkg_file <- file.path(Sys.getenv("HOME"), "dotfiles", "R", "r_packages.txt")
 
 if (!file.exists(pkg_file)) {
   message("Package list not found at: ", pkg_file, " – skipping R package install")
@@ -162,6 +162,7 @@ sudo apt autoremove -y
 echo "===== Creating bash_aliases files ====="
 
 # Create symlink
+touch $HOME/.bash_aliases
 ln -sf ~/dotfiles/bash/bash_aliases ~/.bash_aliases
 
 # Create local alias file (not tracked in git)
