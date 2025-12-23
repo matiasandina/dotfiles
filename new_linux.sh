@@ -8,6 +8,7 @@ echo "===== Base development tools ====="
 sudo apt install -y build-essential wget curl git pkg-config cmake
 sudo apt install -y libfontconfig1-dev libharfbuzz-dev libfribidi-dev libtiff-dev, libwebp-dev libx11-dev libmagick++-dev
 libgdal-dev gdal-bin libgeos-dev libproj-dev libsqlite3-dev libudunits2-dev libabsl-dev libpoppler-cpp-dev
+sudo apt install -y openconnect
 
 echo "===== Installing libreoffice and pandoc ====="
 sudo apt -y install libreoffice pandoc
