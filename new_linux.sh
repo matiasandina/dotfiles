@@ -35,6 +35,10 @@ if [ ! -d ~/.fzf ]; then
     yes | ~/.fzf/install --bin
 fi
 
+if [ ! -f ~/.fzf.bash ]; then
+    yes | ~/.fzf/install --key-bindings --completion --no-update-rc
+fi
+
 echo "===== Installing fd ====="
 sudo apt install -y fd-find
 mkdir -p ~/.local/bin
